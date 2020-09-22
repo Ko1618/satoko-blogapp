@@ -7,12 +7,12 @@ class ArticlesController < ApplicationController
 
     def show
     end
-    
+
     def new
         @article = Article.new
     end
 
-    def create 
+    def create
         @article = Article.new(article_params)
         if @article.save
             redirect_to article_path(@article), notice: '保存できたよ'
@@ -24,7 +24,7 @@ class ArticlesController < ApplicationController
 
     def edit
     end
-    
+
     def update
         if @article.update(article_params)
             redirect_to article_path(@article), notice: '更新できました'
