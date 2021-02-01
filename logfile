@@ -1,0 +1,9 @@
+2021-02-01 14:18:28.752 JST [13261] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-02-01 14:18:28.753 JST [13261] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-01 14:18:28.753 JST [13261] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-01 14:18:28.754 JST [13261] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-02-01 14:18:28.759 JST [13262] LOG:  database system was shut down at 2021-02-01 14:18:11 JST
+2021-02-01 14:18:28.763 JST [13261] LOG:  database system is ready to accept connections
+2021-02-01 14:19:01.720 JST [13294] FATAL:  database "blogapp_development" does not exist
+2021-02-01 16:15:51.394 JST [16216] ERROR:  column articles.content does not exist at character 39
+2021-02-01 16:15:51.394 JST [16216] STATEMENT:  SELECT 1 AS one FROM "articles" WHERE "articles"."content" = $1 AND "articles"."id" != $2 LIMIT $3
