@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Articles", type: :request do
   let!(:user) { create(:user) }
-  let!(:article) { create_list(:article, 3, user: user) }
+  let!(:articles) { create_list(:article, 3, user: user) }
 
   describe 'GET /articles' do
     it '200ステータスが返ってくる' do
